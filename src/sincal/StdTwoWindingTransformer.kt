@@ -1,0 +1,4 @@
+package sincal
+
+class StdTwoWindingTransformer {
+}
