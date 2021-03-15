@@ -1,4 +1,4 @@
-package main.kotlin.com.zepben.evolvemapping
+package com.zepben.evolvemapping
 
 
 

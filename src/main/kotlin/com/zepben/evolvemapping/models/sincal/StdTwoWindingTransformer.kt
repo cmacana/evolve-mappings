@@ -1,4 +1,4 @@
-package main.kotlin.com.zepben.evolvemapping.models.sincal
+package com.zepben.evolvemapping.models.sincal
 
 class StdTwoWindingTransformer {
 
