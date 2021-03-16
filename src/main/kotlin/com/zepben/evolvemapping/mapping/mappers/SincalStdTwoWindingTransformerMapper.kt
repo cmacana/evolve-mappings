@@ -1,5 +1,9 @@
 package com.zepben.evolvemapping.mapping.mappers
 
-internal class SincalStdTwoWindingTransformerMapper() {
+import com.zepben.evolvemapping.services.CimServices
+import com.zepben.evolvemapping.services.SincalService
+
+internal class SincalStdTwoWindingTransformerMapper(sincalServices: SincalService, cimServices: CimServices) {
+
 
 }
