@@ -1,7 +1,14 @@
 package com.zepben.evolvemapping.services
 
 internal class SincalServices(
-    val byElementId: MutableMap<String, SincalElement> = mutableMapOf()
+    val StdTwoWindingTransformerMap: MutableMap<String, SincalElement> = mutableMapOf()
+){
+
+}
+
+
+
+internal data class SincalElement(
+    val Element_ID: String
 )
 
-internal data class SincalElement(val elementId: String)

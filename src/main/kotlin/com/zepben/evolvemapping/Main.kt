@@ -10,15 +10,15 @@ import kotlin.system.exitProcess
 
 private val logger = LoggerFactory.getLogger("xml-rdf-network-importer")
 
-fun main() {
-    val dbPath = "F:\\Data\\EssentialEnergy\\SINCAL\\LineTypesV16.mdb"
+/**
+ * Run Mapping from SINCAL V16 Master db to produce an EWB Sqlite db.
+ */
 
-    val p = Paths.get(dbPath)
-    print(p.fileName)
-    print(p.toString())
-
+fun main(args: Array<String>) {
+    val dbPath = args[0] // args = Path to the acces database needs to be provide as an unique argument
     val stdLineReader = StdLineReader()
-    val records = stdLineReader.readMsAccessStdLineRecords(p)
+    val records = stdLineReader.readMsAccessStdLineRecords(Paths.get(dbPath))
+    println(records)
 
 }
 
