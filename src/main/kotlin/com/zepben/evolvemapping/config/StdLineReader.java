@@ -11,6 +11,7 @@ import java.util.Set;
 import static java.lang.Math.round;
 
 public class StdLineReader {
+
     public Set<StdLineRecord> readMsAccessStdLineRecords(Path path) throws SQLException, ClassNotFoundException {
         final Set<StdLineRecord> records = new HashSet<>();
         // Load driver
@@ -36,17 +37,7 @@ public class StdLineReader {
         }
     }
 
-    interface Dependencies {
-
-        byte[] readBytes(Path path) throws IOException;
-
-        Set<StdLineRecord> readMsAccesssStdLineRecords(Path path) throws Exception;
-
-        String getMimeType(Path path) throws IOException;
-
-    }
-
-    final static class StdLineRecord {
+    final public static class StdLineRecord {
 
         final int elementId;
         final double r;
